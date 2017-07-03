@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="MaterialDesignCards.App">
+	<Application.Resources>
+        <ResourceDictionary>
+            <Color x:FactoryMethod="FromHex" x:Key="MyBackgroundColor">
+                <x:Arguments>
+                    <x:String>#BDBDBD</x:String>
+                </x:Arguments>
+            </Color>
+            <Color x:FactoryMethod="FromHex" x:Key="MyPrimaryColor">
+                <x:Arguments>
+                    <x:String>#FFC107</x:String>
+                </x:Arguments>
+            </Color>
+            <Color x:FactoryMethod="FromHex" x:Key="MyPrimaryDarkColor">
+                <x:Arguments>
+                    <x:String>#FFA000</x:String>
+                </x:Arguments>
+            </Color>
+            <Color x:FactoryMethod="FromHex" x:Key="MyPrimaryLightColor">
+                <x:Arguments>
+                    <x:String>#FFECB3</x:String>
+                </x:Arguments>
+            </Color>
+            <Color x:FactoryMethod="FromHex" x:Key="MyAccentColor">
+                <x:Arguments>
+                    <x:String>#607D8B</x:String>
+                </x:Arguments>
+            </Color>
+            <Color x:FactoryMethod="FromHex" x:Key="MyPrimaryTextColor">
+                <x:Arguments>
+                    <x:String>#212121</x:String>
+                </x:Arguments>
+            </Color>
+            <Color x:FactoryMethod="FromHex" x:Key="MySecondaryTextColor">
+                <x:Arguments>
+                    <x:String>#757575</x:String>
+                </x:Arguments>
+            </Color>
+            <Color x:FactoryMethod="FromHex" x:Key="MyIconColor">
+                <x:Arguments>
+                    <x:String>#212121</x:String>
+                </x:Arguments>
+            </Color>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

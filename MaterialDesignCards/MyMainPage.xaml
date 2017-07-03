@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage BackgroundColor="{StaticResource MyBackgroundColor}" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:MaterialDesignCards.CustomMaterialCards" x:Class="MaterialDesignCards.MyMainPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <StackLayout Grid.Row="0" Orientation="Vertical" BackgroundColor="{StaticResource MyPrimaryColor}" Padding="20">
+                <Label Text="Xamarin Forms" FontSize="Large" TextColor="White" />
+                <Label Text="Material Design Cards" FontSize="Medium" TextColor="{StaticResource MyPrimaryLightColor}" />
+            </StackLayout>
+            <ScrollView Grid.Row="1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <local:TwoActionsCard Grid.Row="0" Margin="8" Title="Material Design Cards" SubTitle="Showcase" PrimaryActionText="LIKE" SecondaryActionText="EXPLORE">
+                        <local:TwoActionsCard.MainContent>
+                            <Label Text="This is the main content of the card. It can contain any View element such as a Grid, Label, Image, StackLayout..." FontSize="Small" />
+                        </local:TwoActionsCard.MainContent>
+                    </local:TwoActionsCard>
+                    <local:TwoActionsCard Grid.Row="1" Margin="8" Title="2017 Glastonbury Festival" SubTitle="21-25th June" PrimaryActionText="BUY TICKETS" SecondaryActionText="EXPLORE">
+                        <local:TwoActionsCard.MainContent>
+                            <ScrollView Orientation="Horizontal" HeightRequest="150">
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
+                                    <Image Grid.Column="0" HeightRequest="150" Source="http://cdn.glastonburyfestivals.co.uk/wp-content/uploads/2016/09/81-Glastofest-AndrewAllcock-160625-1701.jpg" />
+                                    <Image Grid.Column="1" HeightRequest="150" Source="http://cdn.glastonburyfestivals.co.uk/wp-content/uploads/2016/06/Sunday_Glastonbury2016_002.jpg" />
+                                    <Image Grid.Column="2" HeightRequest="150" Source="http://cdn.glastonburyfestivals.co.uk/wp-content/uploads/2014/05/1251982091_the_brush_they_tar_us_with.jpg" />
+                                </Grid>
+                            </ScrollView>
+                        </local:TwoActionsCard.MainContent>
+                    </local:TwoActionsCard>
+                    <ScrollView Grid.Row="2" Margin="8" Orientation="Horizontal">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            <local:TwoActionsCard Grid.Column="0" Title="2017 Vieilles Charrues Festival" SubTitle="13-16th July" PrimaryActionText="BUY TICKETS" SecondaryActionText="EXPLORE" />
+                            <local:TwoActionsCard Grid.Column="1" Title="2017 Sziget Festival" SubTitle="9-16th August" PrimaryActionText="BUY TICKETS" SecondaryActionText="EXPLORE" />
+                            <local:TwoActionsCard Grid.Column="2" Title="2017 Tomorrowland" SubTitle="21-30th July" PrimaryActionText="BUY TICKETS" SecondaryActionText="EXPLORE" />
+                        </Grid>
+                    </ScrollView>
+                </Grid>
+            </ScrollView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

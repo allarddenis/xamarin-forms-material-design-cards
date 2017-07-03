@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Frame x:Name="two_actions_card" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="MaterialDesignCards.CustomMaterialCards.TwoActionsCard">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Label Grid.Row="0" Text="{Binding Title, Source={x:Reference two_actions_card}}" FontSize="Medium" TextColor="{StaticResource MyPrimaryTextColor}" />
+        <Label Grid.Row="1" Text="{Binding SubTitle, Source={x:Reference two_actions_card}}" FontSize="Small" TextColor="{StaticResource MySecondaryTextColor}" />
+        <ContentPresenter Grid.Row="2" Margin="0,8,0,8" Content="{Binding MainContent, Source={x:Reference two_actions_card}}"/>
+        <BoxView Grid.Row="3" BackgroundColor="{StaticResource MyAccentColor}" HeightRequest="1" />
+        <Grid Grid.Row="4" Margin="8, 0, 8, 0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="1" Text="{Binding PrimaryActionText, Source={x:Reference two_actions_card}}" FontSize="Small" TextColor="{StaticResource MyPrimaryColor}">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding PrimaryAction, Source={x:Reference two_actions_card}}" />
+                </Label.GestureRecognizers>
+            </Label>
+            <Label Grid.Column="2" Text="{Binding SecondaryActionText, Source={x:Reference two_actions_card}}" Margin="16, 0, 0, 0" FontSize="Small" TextColor="{StaticResource MyPrimaryColor}">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding SecondaryAction, Source={x:Reference two_actions_card}}" />
+                </Label.GestureRecognizers>
+            </Label>
+        </Grid>
+    </Grid>
+</Frame>
