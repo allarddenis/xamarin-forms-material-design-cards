@@ -1,14 +1,14 @@
-# `Xamarin Forms - Material Design Cards`
+# Xamarin Forms - Material Design Cards
 
 This repository contains an implementation of Google [material design cards](https://material.io/guidelines/components/cards.html).
 
-# `Summary`
+# Summary
 1. [How it looks](#how-it-looks)
 2. [Bindable properties](#bindable-properties)
 3. [How to use](#how-to-use)
 4. [Author](#author)
 
-# `How It Looks`
+# How It Looks
 
 ## On iOS (iPhone SE simulator)
 
@@ -20,7 +20,7 @@ This repository contains an implementation of Google [material design cards](htt
 ![screenshot](https://github.com/allarddenis/xamarin-forms-material-design-cards/blob/master/Screenshots/android-1.png "android-1")
 ![screenshot](https://github.com/allarddenis/xamarin-forms-material-design-cards/blob/master/Screenshots/android-2.png "android-2")
 
-# `Bindable Properties`
+# Bindable Properties
 
 * __Title__ (string) : title of the card (on top of it)
 * __SubTitle__ (string) : subtitle of the card
@@ -30,7 +30,7 @@ This repository contains an implementation of Google [material design cards](htt
 * __SecondaryActionText__ (string) : Text of the second action button at the bottom of the card
 * __SecondaryAction__ (ICommand) : command associated with the second action button
 
-# `How To Use`
+# How To Use
 
 ## Create the card component
 
@@ -74,6 +74,6 @@ This repository contains an implementation of Google [material design cards](htt
 </local:TwoActionsCard>
 ```
 
-# `Author`
+# Author
 
 Denis Allard
