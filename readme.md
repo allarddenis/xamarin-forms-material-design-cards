@@ -10,12 +10,12 @@ This repository contains an implementation of Google [material design cards](htt
 
 # How It Looks
 
-## On iOS (iPhone SE simulator)
+### On iOS (iPhone SE simulator)
 
 ![screenshot](https://github.com/allarddenis/xamarin-forms-material-design-cards/blob/master/Screenshots/ios-1.png "ios-1")
 ![screenshot](https://github.com/allarddenis/xamarin-forms-material-design-cards/blob/master/Screenshots/ios-2.png "ios-2")
 
-## On Android (Nexus 5X real device)
+### On Android (Nexus 5X real device)
 
 ![screenshot](https://github.com/allarddenis/xamarin-forms-material-design-cards/blob/master/Screenshots/android-1.png "android-1")
 ![screenshot](https://github.com/allarddenis/xamarin-forms-material-design-cards/blob/master/Screenshots/android-2.png "android-2")
@@ -32,12 +32,12 @@ This repository contains an implementation of Google [material design cards](htt
 
 # How To Use
 
-## Create the card component
+### Create the card component
 
 1. Copy-paste the TwoActionsCard component from __Custom Material Cards__ folder
 2. Make sure to __change the name the namespace__ of the component to match your project & namespace
 
-## Use the component
+### Use the component
 
 1. Mention your namespace in the page you want to display cards :
 
