@@ -17,8 +17,8 @@ This repository contains an implementation of Google [material design cards](htt
 
 ## On Android (Nexus 5X real device)
 
-![screenshot](https://github.com/allarddenis/xamarin-forms-material-design-cards/blob/master/Screenshots/android-1.png =250x)
-![screenshot](https://github.com/allarddenis/xamarin-forms-material-design-cards/blob/master/Screenshots/android-2.png =250x)
+![screenshot](https://github.com/allarddenis/xamarin-forms-material-design-cards/blob/master/Screenshots/android-1.png "android-1")
+![screenshot](https://github.com/allarddenis/xamarin-forms-material-design-cards/blob/master/Screenshots/android-2.png "android-2")
 
 # `Bindable Properties`
 
