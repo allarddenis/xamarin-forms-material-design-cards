@@ -35,6 +35,9 @@
     <EmbeddedResource Include="MyMainPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="Custom Material Cards\TwoActionsImageCard.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -46,6 +49,9 @@
     </Compile>
     <Compile Include="MyMainPage.xaml.cs">
       <DependentUpon>MyMainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Custom Material Cards\TwoActionsImageCard.xaml.cs">
+      <DependentUpon>TwoActionsImageCard.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
